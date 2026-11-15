@@ -7,7 +7,7 @@ A revenue-science decision system designed for a two-hotel group in Portugal to 
 ## Tech Stack & Tools
 * **Language:** Python 3.11
 * **Data Manipulation:** pandas, NumPy
-* **Machine Learning & Optimization:** scikit-learn, LightGBM / XGBoost *(keep whichever you used)*, SciPy
+* **Machine Learning & Optimization:** scikit-learn, XGBoost, SciPy
 * **Testing & Code Quality:** pytest
 * **Visualization:** Matplotlib, Seaborn
 
