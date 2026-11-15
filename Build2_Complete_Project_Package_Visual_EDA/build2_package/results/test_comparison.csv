@@ -1,0 +1,9 @@
+hotel,method,parameter_frozen,validation_feasible,test_under_ceiling,cost_eur,walks,arrivals,walks_per_1000,empty_rooms,extra_rooms,decision_nights,savings_vs_zero_eur
+City Hotel,flat,20,True,True,2151287.74,0,16597,0.0,19853,780,39,87996.1
+City Hotel,historical_rate,0,True,True,2162128.94,0,16519,0.0,19931,702,36,77154.9
+City Hotel,logistic,0,True,True,2154683.54,0,16562,0.0,19888,745,39,84600.3
+City Hotel,zero,0,True,True,2239283.84,0,15817,0.0,20633,0,0,0.0
+Resort Hotel,flat,7,True,True,1586733.54,43,9167,4.691,15176,42,6,-6383.17
+Resort Hotel,historical_rate,20,True,True,1580590.07,19,9127,2.082,15192,2,2,-239.7
+Resort Hotel,logistic,20,True,True,1579506.17,18,9139,1.97,15179,14,1,844.2
+Resort Hotel,zero,0,True,True,1580350.37,18,9125,1.973,15193,0,0,0.0

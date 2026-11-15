@@ -1,0 +1,9 @@
+hotel,method,parameter,validation_feasible,validation_cost_eur,validation_walks_per_1000
+City Hotel,flat,20,True,1575890.02,0.0
+City Hotel,historical_rate,0,True,1582911.73,0.0
+City Hotel,logistic,0,True,1582698.02,0.0
+City Hotel,zero,0,True,1637805.12,0.0
+Resort Hotel,flat,7,True,1245151.09,0.0
+Resort Hotel,historical_rate,20,True,1247455.09,0.0
+Resort Hotel,logistic,20,True,1246693.09,0.149
+Resort Hotel,zero,0,True,1248252.09,0.0

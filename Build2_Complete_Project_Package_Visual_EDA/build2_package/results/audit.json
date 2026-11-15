@@ -1,0 +1,67 @@
+{
+  "rows": 119390,
+  "columns_original": 32,
+  "identical_rows_do_not_auto_delete": 31994,
+  "missing": {
+    "hotel": 0,
+    "is_canceled": 0,
+    "lead_time": 0,
+    "arrival_date_year": 0,
+    "arrival_date_month": 0,
+    "arrival_date_week_number": 0,
+    "arrival_date_day_of_month": 0,
+    "stays_in_weekend_nights": 0,
+    "stays_in_week_nights": 0,
+    "adults": 0,
+    "children": 4,
+    "babies": 0,
+    "meal": 0,
+    "country": 488,
+    "market_segment": 0,
+    "distribution_channel": 0,
+    "is_repeated_guest": 0,
+    "previous_cancellations": 0,
+    "previous_bookings_not_canceled": 0,
+    "reserved_room_type": 0,
+    "assigned_room_type": 0,
+    "booking_changes": 0,
+    "deposit_type": 0,
+    "agent": 16340,
+    "company": 112593,
+    "days_in_waiting_list": 0,
+    "customer_type": 0,
+    "adr": 0,
+    "required_car_parking_spaces": 0,
+    "total_of_special_requests": 0,
+    "reservation_status": 0,
+    "reservation_status_date": 0,
+    "arrival_date": 0,
+    "shows": 0
+  },
+  "split_records": {
+    "train": 49157,
+    "validation": 29546,
+    "test": 40687
+  },
+  "model_metrics": {
+    "validation_auc": 0.7318,
+    "validation_brier": 0.1831,
+    "test_auc": 0.7721,
+    "test_brier": 0.177
+  },
+  "assumed_capacity": {
+    "City Hotel": 150,
+    "Resort Hotel": 100
+  },
+  "notes": [
+    "This is a retrospective arrival-night simulation, NOT a live hotel recommendation.",
+    "Unknown actual room capacities; provided values are hypothetical scenarios.",
+    "No booking snapshots, cancellation times, or booking IDs.",
+    "Extra reservations are assumed guaranteed arrivals; this is a modeling simplification.",
+    "Same-day arrival cohorts are used instead of complete multiday occupied room-nights.",
+    "2017 results are a single frozen-policy evaluation; do not tune on test.",
+    "Zero/negative ADR replaced with positive training hotel median where daily median unavailable.",
+    "Walk ceiling uses modeled arriving guests as denominator; clarify exact client definition.",
+    "Booking-time availability of each feature requires operational confirmation."
+  ]
+}
