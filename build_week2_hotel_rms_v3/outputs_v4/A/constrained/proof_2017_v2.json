@@ -1,0 +1,1 @@
+{"overall": [{"rule": "Service-level (per stay)", "walks_per_1000_City": 21.764603841765144, "walks_per_1000_Resort": 6.9231906963646175}], "by_hotel": {}, "bootstrap_95ci_EUR": {"saving_vs_flat_as_written": [0, 0, 0], "saving_vs_flat_fairer": [0, 0, 0], "saving_vs_no_overselling": [0, 0, 0]}}

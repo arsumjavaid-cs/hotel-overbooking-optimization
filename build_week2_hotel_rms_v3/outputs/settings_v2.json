@@ -1,0 +1,64 @@
+{
+ "feature_set": "b2",
+ "mode": "rolling 91d",
+ "window_days": 91,
+ "lambda_": 1.5,
+ "g": 0.35,
+ "walk_standard_per_1000": 10.0,
+ "validation_target_per_1000": 7.0,
+ "capacity_estimate": {
+  "City Hotel": 226,
+  "Resort Hotel": 185
+ },
+ "bin2_ablation": {
+  "bin1": {
+   "logloss": 0.19601406809651087,
+   "auc": 0.789281106187771,
+   "far": 0.25352197577653096,
+   "near": 0.14239088948398793
+  },
+  "b2": {
+   "logloss": 0.18853696626681568,
+   "auc": 0.8015616953963423,
+   "far": 0.24410521372690427,
+   "near": 0.13672242146861457
+  },
+  "b2leaky": {
+   "logloss": 0.18704474684818342,
+   "auc": 0.8102661613908249,
+   "far": 0.24061429614008822,
+   "near": 0.13709388572738876
+  }
+ },
+ "bin2_caveats": {
+  "stays_in_weekend_nights / stays_in_week_nights": "Final length of stay; can be amended before arrival.",
+  "adults / children / babies": "Final party size; can change before arrival.",
+  "meal": "Final board basis; can be amended.",
+  "days_in_waiting_list": "Final once the booking is confirmed; 97% are zero.",
+  "adr": "Final average rate; amendments change it. A derived value (revenue / nights).",
+  "booking_changes (NOT ADOPTED)": "Counted until check-in or cancellation, so a cancelled booking has less time to accumulate changes: partly an outcome proxy.",
+  "total_of_special_requests (NOT ADOPTED)": "Accumulates until arrival or cancellation: same truncation by the outcome."
+ },
+ "validation_comparison": {
+  "none": {
+   "cost": 170136.9716245643,
+   "City": 0.0,
+   "Resort": 0.0
+  },
+  "flat_h": {
+   "cost": 172253.8658669609,
+   "City": 13.79340940289769,
+   "Resort": 3.207987933615082
+  },
+  "flat": {
+   "cost": 3760835.9474416086,
+   "City": 230.22529140738914,
+   "Resort": 164.90824406816338
+  },
+  "new": {
+   "cost": 113431.46150283107,
+   "rate_City": 1.9399866192944641,
+   "rate_Resort": 0.8990285747630916
+  }
+ }
+}
