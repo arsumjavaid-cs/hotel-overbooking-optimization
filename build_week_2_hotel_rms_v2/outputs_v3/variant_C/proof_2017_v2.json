@@ -1,0 +1,397 @@
+{
+ "note": "EXPLORATORY third look: the Jan-Aug 2017 window was already used by v1 and v2.",
+ "tight_decisions": 4795,
+ "overall": [
+  {
+   "rule": "New rule (constrained)",
+   "cost_EUR": 143875.90154467354,
+   "rooms_walked": 179.21929940460112,
+   "rooms_empty": 954.8746986223193,
+   "walks_per_1000_both": 2.5598817336834965,
+   "walks_per_1000_City": 3.0177994784283944,
+   "walks_per_1000_Resort": 1.9315063103566068,
+   "worst_month_City": 13.904048848130083,
+   "worst_month_Resort": 3.788850242912814,
+   "avg_oversell": 4.492179353493222
+  },
+  {
+   "rule": "Same model, cost only",
+   "cost_EUR": 160792.21133131042,
+   "rooms_walked": 286.0380795463967,
+   "rooms_empty": 822.6472633526973,
+   "walks_per_1000_both": 4.0717269032124435,
+   "walks_per_1000_City": 4.491394447959217,
+   "walks_per_1000_Resort": 3.4954215140533935,
+   "worst_month_City": 16.65004515099757,
+   "worst_month_Resort": 8.315412908581473,
+   "avg_oversell": 5.225026068821689
+  },
+  {
+   "rule": "Flat rule, fairer version",
+   "cost_EUR": 372254.38310965203,
+   "rooms_walked": 1067.656275113365,
+   "rooms_empty": 548.3879458080579,
+   "walks_per_1000_both": 14.97294496118131,
+   "walks_per_1000_City": 24.15198104042173,
+   "walks_per_1000_Resort": 2.007582593241301,
+   "worst_month_City": 35.754051619032694,
+   "worst_month_Resort": 3.2144285164148396,
+   "avg_oversell": 8.448383733055266
+  },
+  {
+   "rule": "No overselling",
+   "cost_EUR": 219214.95869523627,
+   "rooms_walked": 0.0,
+   "rooms_empty": 2238.805527673637,
+   "walks_per_1000_both": 0.0,
+   "walks_per_1000_City": 0.0,
+   "walks_per_1000_Resort": 0.0,
+   "worst_month_City": 0.0,
+   "worst_month_Resort": 0.0,
+   "avg_oversell": 0.0
+  },
+  {
+   "rule": "Flat rule as written",
+   "cost_EUR": 5599847.378774745,
+   "rooms_walked": 18665.47998924985,
+   "rooms_empty": 2.42107610796399,
+   "walks_per_1000_both": 208.670619744686,
+   "walks_per_1000_City": 242.96700415488917,
+   "walks_per_1000_Resort": 156.2981478723617,
+   "worst_month_City": 256.5794624096613,
+   "worst_month_Resort": 163.58876900177518,
+   "avg_oversell": 63.11803962460897
+  }
+ ],
+ "by_hotel": {
+  "City Hotel": [
+   {
+    "rule": "New rule (constrained)",
+    "cost_EUR": 89785.74336825668,
+    "rooms_walked": 122.21581146000483,
+    "rooms_empty": 546.037844565799,
+    "walks_per_1000": 3.0177994784283944
+   },
+   {
+    "rule": "Same model, cost only",
+    "cost_EUR": 98609.98465053861,
+    "rooms_walked": 182.57089904773707,
+    "rooms_empty": 455.6678611695201,
+    "walks_per_1000": 4.491394447959217
+   },
+   {
+    "rule": "Flat rule, fairer version",
+    "cost_EUR": 320088.3694815159,
+    "rooms_walked": 1008.3185571523385,
+    "rooms_empty": 181.5648966647816,
+    "walks_per_1000": 24.15198104042173
+   },
+   {
+    "rule": "No overselling",
+    "cost_EUR": 149170.8455448211,
+    "rooms_walked": 0.0,
+    "rooms_empty": 1531.2120872165028,
+    "walks_per_1000": 0.0
+   },
+   {
+    "rule": "Flat rule as written",
+    "cost_EUR": 3940114.4294267553,
+    "rooms_walked": 13133.03682475655,
+    "rooms_empty": 2.42107610796399,
+    "walks_per_1000": 242.96700415488917
+   }
+  ],
+  "Resort Hotel": [
+   {
+    "rule": "New rule (constrained)",
+    "cost_EUR": 54090.15817641686,
+    "rooms_walked": 57.00348794459633,
+    "rooms_empty": 408.8368540565205,
+    "walks_per_1000": 1.9315063103566068
+   },
+   {
+    "rule": "Same model, cost only",
+    "cost_EUR": 62182.22668077181,
+    "rooms_walked": 103.46718049865963,
+    "rooms_empty": 366.9794021831771,
+    "walks_per_1000": 3.4954215140533935
+   },
+   {
+    "rule": "Flat rule, fairer version",
+    "cost_EUR": 52166.01362813611,
+    "rooms_walked": 59.33771796102634,
+    "rooms_empty": 366.82304914327636,
+    "walks_per_1000": 2.007582593241301
+   },
+   {
+    "rule": "No overselling",
+    "cost_EUR": 70044.11315041519,
+    "rooms_walked": 0.0,
+    "rooms_empty": 707.5934404571337,
+    "walks_per_1000": 0.0
+   },
+   {
+    "rule": "Flat rule as written",
+    "cost_EUR": 1659732.9493479896,
+    "rooms_walked": 5532.443164493298,
+    "rooms_empty": 0.0,
+    "walks_per_1000": 156.2981478723617
+   }
+  ]
+ },
+ "by_horizon": {
+  "0": {
+   "new": {
+    "City": 0.4554834691624849,
+    "Resort": 0.17991435942347428
+   },
+   "cost_only": {
+    "City": 0.4554834691624849,
+    "Resort": 0.4495441641631926
+   },
+   "avg_oversell_new": {
+    "City": 0.39690721649484534,
+    "Resort": 0.07734806629834254
+   },
+   "avg_oversell_hindsight_perfect": {
+    "City": 1.596420300205532,
+    "Resort": 0.8479362713318843
+   }
+  },
+  "1": {
+   "new": {
+    "City": 1.1835348063679423,
+    "Resort": 0.955465902901311
+   },
+   "cost_only": {
+    "City": 1.228868017783642,
+    "Resort": 1.258102332368701
+   },
+   "avg_oversell_new": {
+    "City": 1.3367875647668395,
+    "Resort": 0.4431818181818182
+   },
+   "avg_oversell_hindsight_perfect": {
+    "City": 2.904000084277928,
+    "Resort": 1.498355089078454
+   }
+  },
+  "3": {
+   "new": {
+    "City": 2.712528079976566,
+    "Resort": 1.8024316577507558
+   },
+   "cost_only": {
+    "City": 3.463121466643285,
+    "Resort": 2.626797097520046
+   },
+   "avg_oversell_new": {
+    "City": 3.486772486772487,
+    "Resort": 1.0535714285714286
+   },
+   "avg_oversell_hindsight_perfect": {
+    "City": 5.035490086828365,
+    "Resort": 2.808867938721311
+   }
+  },
+  "7": {
+   "new": {
+    "City": 4.425968980013432,
+    "Resort": 2.106277310865747
+   },
+   "cost_only": {
+    "City": 6.762815296915555,
+    "Resort": 3.8489036840593642
+   },
+   "avg_oversell_new": {
+    "City": 7.822222222222222,
+    "Resort": 2.5031055900621118
+   },
+   "avg_oversell_hindsight_perfect": {
+    "City": 9.341807405312645,
+    "Resort": 5.054006520578014
+   }
+  },
+  "13": {
+   "new": {
+    "City": 2.429459850431787,
+    "Resort": 2.224754165692965
+   },
+   "cost_only": {
+    "City": 4.037827996867226,
+    "Resort": 4.927401110586487
+   },
+   "avg_oversell_new": {
+    "City": 11.375,
+    "Resort": 4.91156462585034
+   },
+   "avg_oversell_hindsight_perfect": {
+    "City": 18.2011758294433,
+    "Resort": 8.849039134304157
+   }
+  }
+ },
+ "bootstrap_95ci_EUR": {
+  "saving_vs_flat_as_written": [
+   5455971.477230072,
+   4584290.60133489,
+   6253580.280225696
+  ],
+  "saving_vs_flat_fairer": [
+   228378.48156497846,
+   168655.04103604474,
+   291016.63222495245
+  ],
+  "saving_vs_no_overselling": [
+   75339.05715056276,
+   48893.52147579664,
+   99207.8842115521
+  ]
+ },
+ "calibration": {
+  "0": {
+   "predicted": 475.1772578030351,
+   "actual": 414.0
+  },
+  "1": {
+   "predicted": 863.0457899594651,
+   "actual": 730.0
+  },
+  "3": {
+   "predicted": 1564.7665094256033,
+   "actual": 1252.0
+  },
+  "7": {
+   "predicted": 2694.2869527848,
+   "actual": 2152.0
+  },
+  "13": {
+   "predicted": 3547.791068955423,
+   "actual": 3657.0
+  }
+ },
+ "compliance": {
+  "City Hotel": true,
+  "Resort Hotel": true
+ },
+ "settings": {
+  "feature_set": "b2",
+  "mode": "rolling 56d",
+  "lam": 1.5,
+  "g": 0.25
+ },
+ "calibration_by_month": [
+  {
+   "hotel": "City Hotel",
+   "m": 1,
+   "predicted": 248.03,
+   "actual": 129,
+   "pred_over_actual": 1.923
+  },
+  {
+   "hotel": "City Hotel",
+   "m": 2,
+   "predicted": 1167.818,
+   "actual": 1344,
+   "pred_over_actual": 0.869
+  },
+  {
+   "hotel": "City Hotel",
+   "m": 3,
+   "predicted": 3662.758,
+   "actual": 3042,
+   "pred_over_actual": 1.204
+  },
+  {
+   "hotel": "City Hotel",
+   "m": 4,
+   "predicted": 4620.357,
+   "actual": 3326,
+   "pred_over_actual": 1.389
+  },
+  {
+   "hotel": "City Hotel",
+   "m": 5,
+   "predicted": 3947.834,
+   "actual": 4292,
+   "pred_over_actual": 0.92
+  },
+  {
+   "hotel": "City Hotel",
+   "m": 6,
+   "predicted": 3748.184,
+   "actual": 2867,
+   "pred_over_actual": 1.307
+  },
+  {
+   "hotel": "City Hotel",
+   "m": 7,
+   "predicted": 3328.917,
+   "actual": 2269,
+   "pred_over_actual": 1.467
+  },
+  {
+   "hotel": "City Hotel",
+   "m": 8,
+   "predicted": 2414.464,
+   "actual": 2459,
+   "pred_over_actual": 0.982
+  },
+  {
+   "hotel": "Resort Hotel",
+   "m": 1,
+   "predicted": 4.012,
+   "actual": 17,
+   "pred_over_actual": 0.236
+  },
+  {
+   "hotel": "Resort Hotel",
+   "m": 2,
+   "predicted": 353.341,
+   "actual": 606,
+   "pred_over_actual": 0.583
+  },
+  {
+   "hotel": "Resort Hotel",
+   "m": 3,
+   "predicted": 798.558,
+   "actual": 877,
+   "pred_over_actual": 0.911
+  },
+  {
+   "hotel": "Resort Hotel",
+   "m": 4,
+   "predicted": 1202.897,
+   "actual": 957,
+   "pred_over_actual": 1.257
+  },
+  {
+   "hotel": "Resort Hotel",
+   "m": 5,
+   "predicted": 920.077,
+   "actual": 1572,
+   "pred_over_actual": 0.585
+  },
+  {
+   "hotel": "Resort Hotel",
+   "m": 6,
+   "predicted": 1551.444,
+   "actual": 1907,
+   "pred_over_actual": 0.814
+  },
+  {
+   "hotel": "Resort Hotel",
+   "m": 7,
+   "predicted": 2029.9,
+   "actual": 1215,
+   "pred_over_actual": 1.671
+  },
+  {
+   "hotel": "Resort Hotel",
+   "m": 8,
+   "predicted": 2608.075,
+   "actual": 1809,
+   "pred_over_actual": 1.442
+  }
+ ]
+}

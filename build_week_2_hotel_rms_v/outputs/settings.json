@@ -1,0 +1,53 @@
+{
+ "train_arrivals_before": "2016-07-01",
+ "validation_nights": "2016-07-15..2016-12-31",
+ "gbm_config": {
+  "max_leaf_nodes": 15,
+  "learning_rate": 0.05,
+  "max_iter": 300,
+  "l2_regularization": 5.0,
+  "min_samples_leaf": 300
+ },
+ "log_odds_shift": {
+  "City Hotel": 0.6464384191719936,
+  "Resort Hotel": 0.1918570934385656
+ },
+ "lambda": 3.0,
+ "capacity_estimate": {
+  "City Hotel": 226,
+  "Resort Hotel": 185
+ },
+ "walk_cost_eur": 300.0,
+ "flat_rule_safety_rooms": 3,
+ "tight_threshold": 0.8,
+ "flat_rule_avg_cancel_rate": {
+  "City Hotel": 0.4166271384751605,
+  "Resort Hotel": 0.2515113493783506
+ },
+ "validation": {
+  "decisions_scored": 3329,
+  "nights": 259,
+  "cost_EUR": {
+   "model": 136779.1307572917,
+   "flat": 3760835.9474416086,
+   "flat_h": 172253.8658669609,
+   "none": 170136.9716245643
+  },
+  "walk_rooms": {
+   "model": 85.25495173453292,
+   "flat": 12536.119824805359,
+   "flat_h": 455.4553650875975,
+   "none": 0.0
+  },
+  "empty_rooms": {
+   "model": 1200.774434259914,
+   "flat": 0.0,
+   "flat_h": 375.2190531735709,
+   "none": 1804.464588232801
+  },
+  "predicted_vs_actual_cancels_on_tight_decisions": {
+   "predicted": 23078.106450259384,
+   "actual": 23162.0
+  }
+ }
+}

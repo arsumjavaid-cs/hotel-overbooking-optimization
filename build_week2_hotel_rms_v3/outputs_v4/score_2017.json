@@ -1,0 +1,276 @@
+{
+ "A": {
+  "table": [
+   {
+    "policy": "Average rate, as written",
+    "extra_room_nights": 894.7457611164192,
+    "extra_gross_revenue": 114969.22350220627,
+    "walk_compensation": 1962790.5296597017,
+    "net_gain_vs_no_overselling": -1847821.3061574954,
+    "guests_walked": 6542.635098865672,
+    "walks_per_1000_checkins_both": 244.0904987622681,
+    "City": 267.29230608192034,
+    "Resort": 190.09907234016015,
+    "worst_month_City": 597.9431244308552,
+    "worst_month_Resort": 513.9425551098809
+   },
+   {
+    "policy": "Average rate, horizon-aware",
+    "extra_room_nights": 1494.0307170263463,
+    "extra_gross_revenue": 148292.44125456837,
+    "walk_compensation": 133721.58427951884,
+    "net_gain_vs_no_overselling": 14570.856975049537,
+    "guests_walked": 445.73861426506284,
+    "walks_per_1000_checkins_both": 20.992272594057514,
+    "City": 28.849218848731084,
+    "Resort": 4.072178554016396,
+    "worst_month_City": 51.4975886218116,
+    "worst_month_Resort": 5.759926630116499
+   },
+   {
+    "policy": "No overselling",
+    "extra_room_nights": 0.0,
+    "extra_gross_revenue": 0.0,
+    "walk_compensation": 0.0,
+    "net_gain_vs_no_overselling": 0.0,
+    "guests_walked": 0.0,
+    "walks_per_1000_checkins_both": 0.0,
+    "City": 0.0,
+    "Resort": 0.0,
+    "worst_month_City": 0.0,
+    "worst_month_Resort": 0.0
+   },
+   {
+    "policy": "Earlier rule (EUR 300 per night), re-scored",
+    "extra_room_nights": 1165.48621725671,
+    "extra_gross_revenue": 117450.77803200494,
+    "walk_compensation": 39925.07727864966,
+    "net_gain_vs_no_overselling": 77525.70075335528,
+    "guests_walked": 133.0835909288322,
+    "walks_per_1000_checkins_both": 6.387847130123972,
+    "City": 7.740094622270568,
+    "Resort": 3.553274495238727,
+    "worst_month_City": 116.16554267429763,
+    "worst_month_Resort": 4.928103902885211
+   },
+   {
+    "policy": "Risk-based, re-tuned per stay",
+    "extra_room_nights": 1546.0545485307273,
+    "extra_gross_revenue": 153877.65589836292,
+    "walk_compensation": 112522.17149392978,
+    "net_gain_vs_no_overselling": 41355.48440443314,
+    "guests_walked": 375.0739049797659,
+    "walks_per_1000_checkins_both": 17.694311140316795,
+    "City": 22.63884214003702,
+    "Resort": 7.159767809482956,
+    "worst_month_City": 39.35841297639967,
+    "worst_month_Resort": 10.50377744808566
+   },
+   {
+    "policy": "Service-level, re-tuned per stay",
+    "extra_room_nights": 1537.4190095251017,
+    "extra_gross_revenue": 152701.15472338334,
+    "walk_compensation": 108154.67772081323,
+    "net_gain_vs_no_overselling": 44546.477002570115,
+    "guests_walked": 360.51559240271075,
+    "walks_per_1000_checkins_both": 17.021627406873364,
+    "City": 21.764603841765144,
+    "Resort": 6.9231906963646175,
+    "worst_month_City": 39.18148776955663,
+    "worst_month_Resort": 10.449701545546127
+   }
+  ],
+  "comparisons": {
+   "service-level re-tuned vs earlier rule": {
+    "diff": -32979.22375078514,
+    "ci": [
+     -51992.0,
+     -13740.0
+    ],
+    "share_weeks": 0.4166666666666667
+   },
+   "service-level vs risk-based (both re-tuned)": {
+    "diff": 3190.9925981369847,
+    "ci": [
+     1210.0,
+     5178.0
+    ],
+    "share_weeks": 0.6111111111111112
+   },
+   "service-level re-tuned vs horizon-aware average": {
+    "diff": 29975.620027520592,
+    "ci": [
+     6900.0,
+     55526.0
+    ],
+    "share_weeks": 0.6388888888888888
+   },
+   "service-level re-tuned vs no overselling": {
+    "diff": 44546.47700257014,
+    "ci": [
+     16797.0,
+     71703.0
+    ],
+    "share_weeks": 0.5833333333333334
+   }
+  },
+  "settings": {
+   "constrained": {
+    "mode": "none",
+    "lam": 1.5,
+    "g": 1.0,
+    "weff": {
+     "City Hotel": 107.41899528735408,
+     "Resort Hotel": 74.04057594125858
+    },
+    "wm": "1"
+   },
+   "risk": {
+    "mode": "none",
+    "lam": 1.5,
+    "weff": {
+     "City Hotel": 107.41899528735408,
+     "Resort Hotel": 74.04057594125858
+    },
+    "wm": "1"
+   }
+  }
+ },
+ "C": {
+  "table": [
+   {
+    "policy": "Average rate, as written",
+    "extra_room_nights": 894.7457611164192,
+    "extra_gross_revenue": 114969.22350220627,
+    "walk_compensation": 1962790.5296597017,
+    "net_gain_vs_no_overselling": -1847821.3061574954,
+    "guests_walked": 6542.635098865672,
+    "walks_per_1000_checkins_both": 244.0904987622681,
+    "City": 267.29230608192034,
+    "Resort": 190.09907234016015,
+    "worst_month_City": 597.9431244308552,
+    "worst_month_Resort": 513.9425551098809
+   },
+   {
+    "policy": "Average rate, horizon-aware",
+    "extra_room_nights": 1494.0307170263463,
+    "extra_gross_revenue": 148292.44125456837,
+    "walk_compensation": 133721.58427951884,
+    "net_gain_vs_no_overselling": 14570.856975049537,
+    "guests_walked": 445.73861426506284,
+    "walks_per_1000_checkins_both": 20.992272594057514,
+    "City": 28.849218848731084,
+    "Resort": 4.072178554016396,
+    "worst_month_City": 51.4975886218116,
+    "worst_month_Resort": 5.759926630116499
+   },
+   {
+    "policy": "No overselling",
+    "extra_room_nights": 0.0,
+    "extra_gross_revenue": 0.0,
+    "walk_compensation": 0.0,
+    "net_gain_vs_no_overselling": 0.0,
+    "guests_walked": 0.0,
+    "walks_per_1000_checkins_both": 0.0,
+    "City": 0.0,
+    "Resort": 0.0,
+    "worst_month_City": 0.0,
+    "worst_month_Resort": 0.0
+   },
+   {
+    "policy": "Earlier rule (EUR 300 per night), re-scored",
+    "extra_room_nights": 1165.8481095229906,
+    "extra_gross_revenue": 117241.72139593402,
+    "walk_compensation": 28630.231886526322,
+    "net_gain_vs_no_overselling": 88611.4895094077,
+    "guests_walked": 95.43410628842108,
+    "walks_per_1000_checkins_both": 4.589403010669931,
+    "City": 4.940352128764382,
+    "Resort": 3.855338153415898,
+    "worst_month_City": 39.28727805612101,
+    "worst_month_Resort": 7.224842977925686
+   },
+   {
+    "policy": "Risk-based, re-tuned per stay",
+    "extra_room_nights": 1271.261694001326,
+    "extra_gross_revenue": 129272.00160643186,
+    "walk_compensation": 41171.95242926622,
+    "net_gain_vs_no_overselling": 88100.04917716564,
+    "guests_walked": 137.2398414308874,
+    "walks_per_1000_checkins_both": 6.576432989733066,
+    "City": 6.85572285052846,
+    "Resort": 5.9916084566066825,
+    "worst_month_City": 47.061517747536485,
+    "worst_month_Resort": 12.11940659394043
+   },
+   {
+    "policy": "Service-level, re-tuned per stay",
+    "extra_room_nights": 1346.2208087720117,
+    "extra_gross_revenue": 133543.65202704672,
+    "walk_compensation": 66226.70032105022,
+    "net_gain_vs_no_overselling": 67316.9517059965,
+    "guests_walked": 220.75566773683406,
+    "walks_per_1000_checkins_both": 10.516301696355345,
+    "City": 14.513036033336665,
+    "Resort": 1.9958339528726452,
+    "worst_month_City": 19.953058045888177,
+    "worst_month_Resort": 4.259286184611043
+   }
+  ],
+  "comparisons": {
+   "service-level re-tuned vs earlier rule": {
+    "diff": -21294.537803411204,
+    "ci": [
+     -36299.0,
+     -7662.0
+    ],
+    "share_weeks": 0.4166666666666667
+   },
+   "service-level vs risk-based (both re-tuned)": {
+    "diff": -20783.097471169163,
+    "ci": [
+     -34783.0,
+     -7999.0
+    ],
+    "share_weeks": 0.4722222222222222
+   },
+   "service-level re-tuned vs horizon-aware average": {
+    "diff": 52746.09473094694,
+    "ci": [
+     34643.0,
+     72154.0
+    ],
+    "share_weeks": 0.9166666666666666
+   },
+   "service-level re-tuned vs no overselling": {
+    "diff": 67316.95170599649,
+    "ci": [
+     41138.0,
+     92848.0
+    ],
+    "share_weeks": 0.6388888888888888
+   }
+  },
+  "settings": {
+   "constrained": {
+    "mode": "none",
+    "lam": 2.0,
+    "g": 0.35,
+    "weff": {
+     "City Hotel": 300.0,
+     "Resort Hotel": 300.0
+    },
+    "wm": "300"
+   },
+   "risk": {
+    "mode": "rolling 56d",
+    "lam": 1.5,
+    "weff": {
+     "City Hotel": 300.0,
+     "Resort Hotel": 300.0
+    },
+    "wm": "300"
+   }
+  }
+ }
+}

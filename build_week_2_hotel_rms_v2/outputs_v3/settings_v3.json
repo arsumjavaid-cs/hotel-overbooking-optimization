@@ -1,0 +1,63 @@
+{
+ "variants": {
+  "A calendar in model (v2)": {
+   "cost": 113431.46150283107,
+   "mode": "rolling 91d",
+   "lam": 1.5,
+   "g": 0.35,
+   "rate_City": 1.9399866192944641,
+   "rate_Resort": 0.8990285747630916,
+   "auc": 0.8015616953963423,
+   "logloss_no_val_fit": 0.19798243860881173,
+   "logloss_val_shift": 0.18853696626681568,
+   "cost_only_best": 114119.34199553156
+  },
+  "B no calendar": {
+   "cost": 100586.00253459057,
+   "mode": "none",
+   "lam": 2.0,
+   "g": 0.5,
+   "rate_City": 2.5003653904948724,
+   "rate_Resort": 0.2037176342870735,
+   "auc": 0.8274695956250684,
+   "logloss_no_val_fit": 0.1788316397823383,
+   "logloss_val_shift": 0.17864324887932878,
+   "cost_only_best": 101101.08489225029
+  },
+  "C no calendar + seasonal layer": {
+   "cost": 107501.90889681103,
+   "mode": "rolling 56d",
+   "lam": 1.5,
+   "g": 0.25,
+   "rate_City": 1.9459187359094907,
+   "rate_Resort": 0.9034521130949804,
+   "auc": 0.8169938777960803,
+   "logloss_no_val_fit": 0.18466377879371926,
+   "logloss_val_shift": 0.18163161071398753,
+   "cost_only_best": 110164.90970146972
+  },
+  "E annual curve as inputs": {
+   "cost": 121312.74067808162,
+   "mode": "rolling 56d",
+   "lam": 1.5,
+   "g": 0.25,
+   "rate_City": 2.848495386633741,
+   "rate_Resort": 0.6622979762955259,
+   "auc": 0.8043338985806193,
+   "logloss_no_val_fit": 0.19653605899610915,
+   "logloss_val_shift": 0.19000634951631135,
+   "cost_only_best": 123275.95542742762
+  }
+ },
+ "chosen": {
+  "variant": "B no calendar",
+  "mode": "none",
+  "lam": 2.0,
+  "g": 0.5
+ },
+ "seasonal_curve": null,
+ "capacity": {
+  "City Hotel": 226,
+  "Resort Hotel": 185
+ }
+}
